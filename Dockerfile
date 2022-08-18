@@ -1,10 +1,10 @@
-# Start from the official public image of Ubuntu.
+# Start by using an official public image of Alpine.
 FROM alpine as baseImage
 
-# Install go in the Docker container.
+# Install go in the Docker image.
 RUN apk add --no-cache go
 
-# Copy all of the files to the container.
+# Copy all of the files to the image.
 COPY . .
 
 # Expose the port so we can send messages locally.
