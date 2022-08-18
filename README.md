@@ -14,16 +14,22 @@ Example: `This is a message` into `This|is|a|message`.
 
 
 # Using the Sample
-First, call `make build-tf`. This will build the image. You can see the image built by calling `docker images`.
+First, call `make build-tf`. This will build the image. 
 
-![docker images](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "docker images")
+![docker build](https://github.com/Sakari-Woods-Unity/textfilter/blob/main/images/docker-build.png "docker build")
+
+You can see the image built by calling `docker images`.
+
+![docker images](https://github.com/Sakari-Woods-Unity/textfilter/blob/main/images/docker-images.png "docker images")
 
 
 Second, call `make start-tf`. This will start the service, and the text `Server is listening...` should appear.
 
+![docker start](https://github.com/Sakari-Woods-Unity/textfilter/blob/main/images/docker-start.png "docker start")
+
 The `docker run` command creates a container from the image and starts it, we can see the running container here:
 
-![docker container](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "docker container")
+![docker container](https://github.com/Sakari-Woods-Unity/textfilter/blob/main/images/docker-containers.png "docker container")
 
 Third, within a second window, make a curl request to localhost:9050 and provide a string. You should get back a returned string that has been altered.
 
