@@ -9,7 +9,7 @@ import (
 	"regexp"
 )
 
-func Main() {
+func main() {
 	fmt.Println("Server is listening...")
 
 	// Bind any incoming connections to call the function HandleRequest.
